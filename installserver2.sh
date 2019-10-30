@@ -5,7 +5,8 @@ cp workserver.py $workserver_path
 
 # install python3-bottle 
 apt-get -y update
-sleep 1
+apt-get -y update
+
 apt-get -y install python3-bottle
 
 # create a service
