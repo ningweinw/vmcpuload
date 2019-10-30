@@ -5,6 +5,9 @@ cp workserver.py $workserver_path
 
 # install python3-bottle 
 apt-get -y update
+# the 1st update got an error with the signature of archive.ubuntu.com_ubuntu_dists_bionic_InRelease
+# workaround: run update again
+apt-get -y update
 apt-get -y install python3-bottle
 
 # create a service
