@@ -5,9 +5,8 @@ cp workserver.py $workserver_path
 
 # install python3-bottle 
 apt-get -y update
-logger -i "apt-get update=$?"
+sleep 1
 apt-get -y install python3-bottle
-logger -i "apt-get install python3-bottle=$?"
 
 # create a service
 touch /etc/systemd/system/workserver.service
